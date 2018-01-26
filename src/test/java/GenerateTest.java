@@ -47,7 +47,7 @@ public class GenerateTest {
     public void buildListBell_createsAnArrayWithANumberOfEmptySlots(){
 
 
-        assert(generate.buildListBell().length < generate.getPossible().size());
+        assert(generate.buildListBell().length >= generate.getPossible().size());
     }
 
 }

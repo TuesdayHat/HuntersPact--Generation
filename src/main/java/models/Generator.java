@@ -26,18 +26,29 @@ public abstract class Generator {
 
     public String randPick (List<String> poss){
         String result = null;
-        int rolls = 1;
-        while (rolls*6 < poss.size()+rolls){
-            rolls++;
+        int dice = 1;
+        while (dice*6 < poss.size()+dice){
+            dice++;
         }
         while(result == null){
-            result = poss.get(dSix(rolls) - (rolls + 1));
+            result = poss.get(dSix(dice) - (dice + 1));
         }
         return result;
     }
 
     public String[] buildListBell(){
-        String[] result = new String[15];
+        int step = 1; //how many dice
+        int stepVal = 6; //how many possible results come from those dice; e.g. 3d6 -> 3~18 = 16
+        final int poss = possible.size();
+
+        while(stepVal < poss){
+            System.out.println(stepVal + " -- " + poss);
+            step++;
+            stepVal = (step*5)+1;
+        }
+        System.out.println(stepVal + " -- " + poss);
+        String[] result = new String[stepVal];
+
         return result;
     }
 
