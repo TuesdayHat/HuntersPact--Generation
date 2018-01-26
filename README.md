@@ -14,6 +14,10 @@ a little sense that they can all live there).
 
 The generator will store the results in a database and serve it up with an API for later use by the game app.
 
+The math is all done in terms of 6 sided dice in order to mimic the behavior of doing all the generation by hand; I don't want the odds of different results to be different between the app and physical dice.
+
+![planning table population](IMG_401.JPG)
+
 Design documents:
 * https://docs.google.com/document/d/1vR8_zfQhlfJSq0X2ctceX_x__fr6khZON0t5fsLcj-s/edit?usp=sharing -- core design doc + rules of the tabletop game\
 * https://docs.google.com/document/d/1Ko7H0n7K_lhixmDi31fxm6DdpyAJCUNK-NzRvpm9W4w/edit?usp=sharing -- chatlog re:
