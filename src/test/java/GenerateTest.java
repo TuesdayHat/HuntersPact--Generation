@@ -27,4 +27,10 @@ public class GenerateTest {
         assert(generate.getXDSix(7) >= 7 && generate.getXDSix(7) <= 42);
     }
 
+    @Test
+    public void getItem_getsARandomItemFromAnArray(){
+        generate.setPossible("Foo", "Bar", "Thing", "Someone", "Bobson Dugnutt");
+        assert(generate.getItem() instanceof String);
+    }
+
 }

@@ -6,11 +6,9 @@ package models;
 public class Generate extends Generator{
 
 
-//    private int randomDSix;
-//
-//    public Generate(){
-//        randomDSix = dSix(1);
-//    }
+    public void setPossible(Object... args){
+
+    }
 
     public int getRandomDSix(){
         return dSix(1);
@@ -18,5 +16,10 @@ public class Generate extends Generator{
 
     public int getXDSix(int num){
         return dSix(num);
+    }
+
+    public Object getItem(){
+        int num = 2;
+        return num;
     }
 }
