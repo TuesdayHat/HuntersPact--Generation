@@ -6,7 +6,11 @@ public abstract class Generator {
 
     public int dSix (int rolls){
         Random rand = new Random();
-        return rand.nextInt(6) + 1;
+        int result = 0;
+        for (int i=0; i< rolls; i++){
+            result += rand.nextInt(6);
+        }
+        return result;
     }
 
 

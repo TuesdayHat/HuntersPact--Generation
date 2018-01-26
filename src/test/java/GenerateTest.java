@@ -10,17 +10,18 @@ public class GenerateTest {
 
     }
 
-    Generate generate = new Generate();
+    private Generate generate = new Generate();
 
 
     @Test
     public void dSix_rollsARandomNumberBetweenOneAndSix(){
-        System.out.println(generate.getRandomDSix());
-        assert(generate.getRandomDSix() >= 1 && generate.getRandomDSix() <= 6);
+        int num = generate.getRandomDSix();
+        System.out.println(num);
+        assert(num >= 1 && num <= 6);
     }
 
     @Test
-    public void dSix_rollsADieMultipleTimes(){
+    public void xDSix_rollsADieMultipleTimes(){
 //        generate.dSix(3);
         //need to roll enough that rolling once will always fail
         assert(generate.getXDSix(7) >= 7 && generate.getXDSix(7) <= 42);
