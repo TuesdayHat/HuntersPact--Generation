@@ -1,13 +1,15 @@
 package models;
 
+import java.util.Arrays;
+
 /**
  * Created by Guest on 1/26/18.
  */
 public class Generate extends Generator{
 
 
-    public void setPossible(Object... args){
-
+    public void setPossible(String... args){
+        this.possible = Arrays.asList(args);
     }
 
     public int getRandomDSix(){
@@ -19,7 +21,6 @@ public class Generate extends Generator{
     }
 
     public Object getItem(){
-        int num = 2;
-        return num;
+        return randPick(this.possible);
     }
 }

@@ -16,8 +16,8 @@ public class GenerateTest {
     @Test
     public void dSix_rollsARandomNumberBetweenOneAndSix(){
         int num = generate.getRandomDSix();
-        System.out.println(num);
         assert(num >= 1 && num <= 6);
+
     }
 
     @Test
@@ -30,6 +30,7 @@ public class GenerateTest {
     @Test
     public void getItem_getsARandomItemFromAnArray(){
         generate.setPossible("Foo", "Bar", "Thing", "Someone", "Bobson Dugnutt");
+
         assert(generate.getItem() instanceof String);
     }
 
