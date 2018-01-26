@@ -36,4 +36,9 @@ public abstract class Generator {
         return result;
     }
 
+    public String[] buildListBell(){
+        String[] result = new String[15];
+        return result;
+    }
+
 }

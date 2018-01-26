@@ -43,9 +43,11 @@ public class GenerateTest {
         assert(generate.randPick(generate.getPossible()) != null);
     }
 
-//    @Test
-//    public void buildListBell_createsAnArrayWithANumberOfEmptySlots(){
-//        assert(generate.buildListBell().size() < generate.getPossible);
-//    }
+    @Test
+    public void buildListBell_createsAnArrayWithANumberOfEmptySlots(){
+
+
+        assert(generate.buildListBell().length < generate.getPossible().size());
+    }
 
 }
