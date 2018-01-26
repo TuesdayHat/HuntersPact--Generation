@@ -21,8 +21,9 @@ public class GenerateTest {
 
     @Test
     public void dSix_rollsADieMultipleTimes(){
-        generate.dSix(3);
-        assert(generate.getRandomDSix() >= 3 && generate.getRandomDSix() <= 18);
+//        generate.dSix(3);
+        //need to roll enough that rolling once will always fail
+        assert(generate.getXDSix(7) >= 7 && generate.getXDSix(7) <= 42);
     }
 
 }

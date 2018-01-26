@@ -6,13 +6,17 @@ package models;
 public class Generate extends Generator{
 
 
-    private int randomDSix;
-
-    public Generate(){
-        randomDSix = dSix(1);
-    }
+//    private int randomDSix;
+//
+//    public Generate(){
+//        randomDSix = dSix(1);
+//    }
 
     public int getRandomDSix(){
-        return randomDSix;
+        return dSix(1);
+    }
+
+    public int getXDSix(int num){
+        return dSix(num);
     }
 }
