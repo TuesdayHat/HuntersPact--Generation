@@ -1,6 +1,7 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -16,6 +17,12 @@ public abstract class Generator {
     }
 
     List<String> possible = new ArrayList<String>();
+    public void setPossible(String... args){
+        this.possible = Arrays.asList(args);
+    }
+    public List<String> getPossible(){
+        return possible;
+    }
 
     public String randPick (List<String> poss){
         String result = null;
@@ -24,7 +31,7 @@ public abstract class Generator {
             rolls++;
         }
         while(result == null){
-            result = poss.get(dSix(rolls));
+            result = poss.get(dSix(rolls) - (rolls + 1));
         }
         return result;
     }
