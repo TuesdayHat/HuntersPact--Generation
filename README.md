@@ -15,12 +15,12 @@ a little sense that they can all live there).
 The generator will store the results in a database and serve it up with an API for later use by the game app.
 
 Design documents:
-    * https://docs.google.com/document/d/1vR8_zfQhlfJSq0X2ctceX_x__fr6khZON0t5fsLcj-s/edit?usp=sharing -- core design doc + rules of the tabletop game
-    * https://docs.google.com/document/d/1Ko7H0n7K_lhixmDi31fxm6DdpyAJCUNK-NzRvpm9W4w/edit?usp=sharing -- chatlog re:
-        * should plants be considered creatures
-        * examples of possible outputs
-        * expected usages of player character powers; moral implications
-    * https://docs.google.com/document/d/1UWgaPh_qVRk2rvdWT9pvdBAZTTRyoCj1hUGbhj7T0K8/edit?usp=sharing -- example tag list
+* https://docs.google.com/document/d/1vR8_zfQhlfJSq0X2ctceX_x__fr6khZON0t5fsLcj-s/edit?usp=sharing -- core design doc + rules of the tabletop game\
+* https://docs.google.com/document/d/1Ko7H0n7K_lhixmDi31fxm6DdpyAJCUNK-NzRvpm9W4w/edit?usp=sharing -- chatlog re:
+    * should plants be considered creatures
+    * examples of possible outputs
+    * expected usages of player character powers; moral implications
+* https://docs.google.com/document/d/1UWgaPh_qVRk2rvdWT9pvdBAZTTRyoCj1hUGbhj7T0K8/edit?usp=sharing -- example tag list
 
 ## Setup
 
