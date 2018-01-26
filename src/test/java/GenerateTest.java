@@ -19,4 +19,10 @@ public class GenerateTest {
         assert(generate.getRandomDSix() >= 1 && generate.getRandomDSix() <= 6);
     }
 
+    @Test
+    public void dSix_rollsADieMultipleTimes(){
+        generate.dSix(3);
+        assert(generate.getRandomDSix() >= 3 && generate.getRandomDSix() <= 18);
+    }
+
 }

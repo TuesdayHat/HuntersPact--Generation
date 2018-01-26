@@ -9,7 +9,7 @@ public class Generate extends Generator{
     private int randomDSix;
 
     public Generate(){
-        randomDSix = dSix();
+        randomDSix = dSix(1);
     }
 
     public int getRandomDSix(){
