@@ -14,6 +14,9 @@ public class RegionGen extends Generator{
 //    }
 
 
+    public void setId(int id){
+        this.id = id;
+    }
 
     public static class Builder {
         int id;

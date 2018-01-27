@@ -16,7 +16,7 @@ public class Sql2oRegionGenDao implements RegionGenDao {
         this.sql2o = sql2o;
     }
 
-    public RegionGen setupRegion = new RegionGen.Builder();
+//    public RegionGen setupRegion = new RegionGen.Builder();
 
     @Override
     public void add(RegionGen region){
@@ -29,7 +29,7 @@ public class Sql2oRegionGenDao implements RegionGenDao {
                     .bind(region)
                     .executeUpdate()
                     .getKey();
-            region.setId();
+            region.setId(id);
         }catch (Sql2oException ex) {
             System.out.println(ex);
         }
