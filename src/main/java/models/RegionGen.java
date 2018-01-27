@@ -1,21 +1,48 @@
 package models;
 
+import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by Guest on 1/26/18.
- */
 public class RegionGen extends Generator{
 
-    int areas;
+    int id;
+    int areasNum;
     List<String> tags;
 
-    RegionGen(){
-        areas = 0;
+//    RegionGen(){
+//        areasNum = 0;
+//    }
+
+    public static class Builder {
+        int id;
+        int areasNum;
+        List<String> tags;
+
+        //builder methods
+        public Builder setId(int id){
+            this.id = id;
+            return this;
+        }
+
+        public Builder setAreasNum(int num){
+            this.areasNum = num;
+            return this;
+        }
+
+        public Builder setTags(String... tags){
+            this.tags = Arrays.asList(tags);
+            return this;
+        }
+
+        public RegionGen builder(){
+            return new RegionGen(this);
+        }
     }
 
-    public void setTags(String... poss){
-
+    private RegionGen(Builder builder){
+        this.areasNum = builder.areasNum;
+        this.id = builder.id;
+        this.tags = builder.tags;
     }
 
 }

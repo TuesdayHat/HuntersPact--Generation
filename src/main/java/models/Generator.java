@@ -1,9 +1,6 @@
 package models;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public abstract class Generator {
 
@@ -36,18 +33,36 @@ public abstract class Generator {
         return result;
     }
 
-    public String[] buildListBell(){
+    public String[] buildArrBell(){
         int step = 1; //how many dice
         int stepVal = 6; //how many possible results come from those dice; e.g. 3d6 -> 3~18 = 16
         final int poss = possible.size();
 
+
+        //creates an array that can hold all the possible results
         while(stepVal < poss){
-            System.out.println(stepVal + " -- " + poss);
+//            System.out.println(stepVal + " -- " + poss);
             step++;
             stepVal = (step*5)+1;
         }
-        System.out.println(stepVal + " -- " + poss);
+//        System.out.println(stepVal + " -- " + poss);
         String[] result = new String[stepVal];
+
+        //generates Populations
+        int popTotal = 0;
+        Map<String, Integer> population = new HashMap<>();
+        while(popTotal <= result.length){
+            String pop = randPick(possible);
+            int members = 0;
+            int roll = 6;
+
+            while(roll > 2){
+                members++;
+                roll = dSix(1);
+            }
+
+            population.put(pop, members);
+        }
 
         return result;
     }

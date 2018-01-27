@@ -9,7 +9,8 @@ public class GenerateTest {
 
     @Before
     public void setUp() {
-        generate.setPossible("Foo",
+        generate.setPossible(
+                "Foo",
                 "Bar",
                 "Thing",
                 "Someone",
@@ -33,7 +34,7 @@ public class GenerateTest {
     }
 
     @Test
-    public void xDSix_rollsADieMultipleTimes(){
+    public void dSix_rollsADieMultipleTimes(){
         //need to roll enough that rolling once will always fail
         assert(generate.dSix(7) >= 7 && generate.dSix(7) <= 42);
     }
@@ -45,9 +46,11 @@ public class GenerateTest {
 
     @Test
     public void buildListBell_createsAnArrayWithANumberOfEmptySlots(){
-
-
-        assert(generate.buildListBell().length >= generate.getPossible().size());
+        assert(generate.buildArrBell().length >= generate.getPossible().size());
     }
 
+    @Test
+    public void buildListBell_generatesPopulationsOfRandomInputs(){
+
+    }
 }
