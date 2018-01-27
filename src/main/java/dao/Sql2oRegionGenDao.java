@@ -29,7 +29,7 @@ public class Sql2oRegionGenDao implements RegionGenDao {
                     .bind(region)
                     .executeUpdate()
                     .getKey();
-            region.setId();
+            region.setId(id);
         }catch (Sql2oException ex) {
             System.out.println(ex);
         }
