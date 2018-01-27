@@ -17,21 +17,21 @@ public class Sql2oRegionGenDao implements RegionGenDao {
     }
 
 //    public RegionGen setupRegion = new RegionGen.Builder();
-//
-//    @Override
-//    public void add(RegionGen region){
-//        /*needs to:
-//            -
-//         */
-//        String sql = "INSERT INTO regions () VALUES (:)";
-//        try(Connection con = sql2o.open()){
-//            int id = (int) con.createQuery(sql)
-//                    .bind(region)
-//                    .executeUpdate()
-//                    .getKey();
-//            region.setId();
-//        }catch (Sql2oException ex) {
-//            System.out.println(ex);
-//        }
-//    }
+
+    @Override
+    public void add(RegionGen region){
+        /*needs to:
+            -
+         */
+        String sql = "INSERT INTO regions () VALUES (:)";
+        try(Connection con = sql2o.open()){
+            int id = (int) con.createQuery(sql)
+                    .bind(region)
+                    .executeUpdate()
+                    .getKey();
+            region.setId();
+        }catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
+    }
 }
