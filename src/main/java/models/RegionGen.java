@@ -13,6 +13,8 @@ public class RegionGen extends Generator{
 //        areasNum = 0;
 //    }
 
+
+
     public static class Builder {
         int id;
         int areasNum;
