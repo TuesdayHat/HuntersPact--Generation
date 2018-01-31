@@ -49,8 +49,8 @@ public class GenerateTest {
         assert(generate.buildArrBell().length >= generate.getPossible().size());
     }
 
-    @Test
-    public void buildListBell_generatesPopulationsOfRandomInputs(){
-
-    }
+//    @Test
+//    public void buildListBell_generatesPopulationsOfRandomInputs(){
+//
+//    }
 }
