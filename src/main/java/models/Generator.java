@@ -60,10 +60,9 @@ public abstract class Generator {
                 members++;
                 roll = dSix(1);
             }
-
+            popTotal += members;
             population.put(pop, members);
         }
-
         return result;
     }
 
